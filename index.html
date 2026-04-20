@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 練習實作</title>
+    <style>
+        /* 1. 表格樣式設定 */
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        /* 設定標題背景顏色 (灰色) */
+        th {
+            background-color: #444444;
+            color: white;
+        }
+        /* 設定資料列背景顏色 (黃色) */
+        td {
+            background-color: #FFFF00;
+        }
+
+        /* 2. 固定定位 div 樣式 */
+        .fixed-div {
+            position: fixed; /* 固定定位 */
+            top: 20px;       /* 距離頂部 */
+            right: 20px;     /* 距離右側 */
+            border: 2px solid #4CAF50; /* 綠色邊框 */
+            padding: 15px;
+            background-color: #f9f9f9;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 表格部分 -->
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <!-- 固定定位的 div -->
+    <div class="fixed-div">
+        This div element has position: fixed;
+    </div>
+
+</body>
+</html>
